@@ -16,7 +16,7 @@ pipeline {
         stage ("test stage")
         {
             when {
-                env.GIT_branch == 'main' // Executes this stage only on the 'main' branch
+            expression { env.BRANCH_NAME == 'main' }
             }
             steps{
                 sh 'echo this will execute only for main branch'
