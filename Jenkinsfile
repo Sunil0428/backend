@@ -1,4 +1,5 @@
-pipeline{
+pipeline {
+    agenet any
     stages{
         stage("Initial")
         {
