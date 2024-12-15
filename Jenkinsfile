@@ -7,5 +7,11 @@ pipeline {
                 sh 'echo this is my first jenkins job'
             }
         }
+        stage ("second stage")
+        {
+            steps{
+                sh 'echo this is the second stage of the job'
+            }
+        }
     }
 }
