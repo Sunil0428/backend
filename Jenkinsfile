@@ -19,7 +19,7 @@ pipeline {
             expression { env.BRANCH_NAME == 'origin/main' }
             }
             steps{
-                sh 'echo this will execute only for main branch'
+                sh 'echo this will execute only for test branch'
             }
         }
     }
