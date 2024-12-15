@@ -16,7 +16,7 @@ pipeline {
         stage ("test stage")
         {
             when {
-            expression { env.BRANCH_NAME == 'origin/main' }
+            expression { BRANCH_NAME == 'origin/main' }
             }
             steps{
                 sh 'echo this will execute only for main branch'
